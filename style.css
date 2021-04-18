@@ -1,0 +1,547 @@
+/*
+=======================================================
+********************** INDEX OF SECTION ***************
+=======================================================
+*/
+
+
+
+/*
+=======================================================
+************* Section:01,  Default Css ****************
+=======================================================
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+img{
+    max-width: 100%;
+}
+.img{
+    max-width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+a:focus{
+    text-decoration: none;
+    outline: none!important;
+}
+.btn{
+    outline: none!important;
+}
+::selection{
+    color: #fff;
+    background: #333;
+    box-shadow: none;
+}
+::placeholder{
+    color: #555;
+    font-size: 14px;
+    opacity: 1;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color:#878991;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #393542;
+}
+.row{
+    justify-content:center!important;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.btn{
+    display: inline-block;
+    padding:18px 70px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-image: -moz-linear-gradient( 178deg, rgb( 255, 153, 165 ) 0%, rgb( 255, 96, 163 ) 100%);
+    background-image: -webkit-linear-gradient( 178deg, rgb( 255, 153, 165 ) 0%, rgb( 255, 96, 163 ) 100%);
+}
+.btn:hover{
+    color: blue;
+}
+/*
+=======================================================
+************* Section:02,  Header Css *****************
+=======================================================
+*/
+.header_area{
+    width: 100%;
+    padding: 40px 0;
+    z-index: 1;
+}
+.tranparent_header {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #cfcfd8;
+    font-weight: 700;
+    transition: .5s;
+    display: block;
+    padding: 20px 0px;
+    line-height: 1;
+}
+nav ul li a:hover{
+    color: #fff;
+    text-decoration:none;
+}
+/*dropdown menu */
+nav ul li .sub-menu1{
+    top: 180%;
+    width:180px;
+    position: absolute;
+    background: #f5f0f2;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 5px;
+}
+nav ul li:hover > .sub-menu1{
+    top: 100%;
+    visibility:visible;
+    opacity:1;
+}
+ul.sub-menu1 li {
+    display: block;
+    margin: 0;
+}
+ul.sub-menu1 li:hover{
+    background:#ff94a5;
+}
+ul.sub-menu1 li:hover a{
+   color:#fff;;
+}
+nav ul li .sub-menu1 li a {
+    color: #6b6262;
+    font-size: 16px;
+    padding:10px 15px;
+    box-shadow: 5px 5px 15px rgab(0,0,0,0.2),-5px -5px 15px rgab(0,0,0,0.2);
+
+}
+nav ul li .sub-menu1 li .sub-menu1{
+    top: 0;
+    left: 100%;
+}
+nav ul li .sub-menu1 li .sub-menu1 li a{
+    color: #6b6262;
+}
+.header_btn a {
+    color: #fff;
+    background: #6d5edf;
+    padding: 16px 54px;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+.header_btn a:hover{
+    color: #fff;
+    background: #ff65a3;
+}
+/*
+=======================================================
+************** Section:03, Slider Css *****************
+=======================================================
+*/
+.slider_area{
+    width: 100%;
+}
+.slider-height{
+    min-height: 1180px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0;
+    top:0;
+}
+.slider-space{
+    padding-top: 385px;
+}
+.slider_app{
+    padding-top: 230px;
+}
+.slider-text h2 {
+    width: 90%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.slider-text p {
+    color: #fff;
+    font-weight: 400;
+    padding-right: 95px;
+    font-size: 18px;
+    margin-bottom:40px;
+}
+.border_btn{
+    border: 2px solid #fff;
+    background: transparent!important;
+    margin-left: 15px;
+}
+.border_btn:hover{
+    background:#FF67A3!important;
+    border: 2px solid transparent;
+    color:blue;
+}
+.shape_wrapper .shape{
+    position: absolute;
+}
+.shape_wrapper .shape-01{
+    top:20%;
+    left:5%;
+}
+.shape_wrapper .shape-02{
+    bottom:26%;
+    left:50%;
+}
+.slider_app{
+    position: relative;
+}
+.app_shape{
+    position: absolute;
+}
+.app_shape1 {
+	left: -28%;
+	top: 28%;
+}
+.app_shape2 {
+	right: 0;
+	top: 28%;
+}
+.app_shape2 {
+	right: -31%;
+	top: 57%;
+}
+/*
+=======================================================
+************ Section:03, Download app Css *************
+=======================================================
+*/
+#download_app{
+    width: 100%;
+}
+.single_counter h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #7336f1;
+}
+.single_counter p{
+    font-size:16px;
+    font-weight:400;
+    color: #878991;
+}
+/*
+=======================================================
+*************** Section:03, Unique  Css ***************
+=======================================================
+*/
+#unique_section{
+    width: 100%;
+    padding:150px 0;
+    position: relative;;
+}
+.unique_shape{
+    position: absolute;
+}
+.unique_shape-1{
+    top:20%;
+    left:-5%;
+}
+.unique_shape-2{
+    top:5%;
+    right:-5%;
+}
+.section_heading{
+    text-align: center;
+}
+.section_heading h2{
+    font-size:40px;
+    color: #393542;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.section_heading p {
+	font-size:18px;
+	color: #878991;
+	font-weight: 400;
+	width:50%;
+    margin:0 auto 70px;
+    
+}
+.unique_single img{
+    margin-bottom: 45px;
+}
+.unique_single h3{
+   font-size: 24px;
+   color: #38363d;
+   font-weight: 700;
+   text-transform: capitalize;
+   margin-bottom:25px;
+}
+.unique_single p{
+   font-size:16px;
+   color: #878991;
+   font-weight:400;
+}
+/*
+=======================================================
+*************** Section:04, Video  Css ****************
+=======================================================
+*/
+#video_section{
+    width: 100%;
+    position: relative;
+}
+.video_box{
+    background:#fff;
+    box-shadow:5px 5px 60px rgba(168, 160, 160, 0.1),-5px -5px 60px rgba(168, 160, 160, 0.1);
+    padding-top: 175px;
+    overflow: hidden;
+    position: relative;
+
+}
+.video_shape{
+    position: absolute;
+    top:50%;
+    left: 0;
+    z-index: -1;
+}
+.video_box h2{
+   font-size: 48px;
+   color: #393542;
+   margin-bottom: 30px;
+}
+.mobile_image {
+	padding-top: 185px;
+}
+.mobile_image img {
+	position: absolute;
+	left: 10%;
+	bottom: 0;
+	width: 100%;
+	top: 60%;
+}
+/*
+=======================================================
+*************** Section:05, Work Css ******************
+=======================================================
+*/
+#work_section{
+    width: 100%;
+    padding:150px 0;
+}
+.margin_row{
+   margin-bottom: 280px;
+}
+
+.work-text h2{
+    font-size: 36px;
+    color: #393542;
+    font-weight: 700;
+}
+.work-text p{
+    font-size: 16px;
+    color: #878991;
+    margin: 35px 0;
+}
+.work_image_2{
+    margin-top:-200px;
+}
+/*
+=======================================================
+************ Section:06, Pricing Table Css ************
+=======================================================
+*/
+#pricing_table{
+    width: 100%;
+    position: relative;
+}
+.testimonial_bg{
+    position: absolute;
+    top:70%;
+    left: 0;
+}
+.pricing_heading{
+    margin-bottom:60px;
+}
+.pricing_heading .price_btn1 {
+    width: 140px;
+    padding: 25px 45px;
+    background-image: -moz-linear-gradient( 178deg, rgb( 255, 153, 165 ) 0%, rgb( 255, 96, 163 ) 100%);
+    background-image: -webkit-linear-gradient( 178deg, rgb( 255, 153, 165 ) 0%, rgb( 255, 96, 163 ) 100%);
+    border-radius: 30px 0 0 30px;
+    color: #fff;
+    font-weight: 700;
+}
+.pricing_heading .price_btn2 {
+    width: 140px;
+    padding: 23px 45px;
+    border: 2px solid #e7e7e7;
+    color: #878991;
+    font-weight: 700;
+    border-radius: 0 30px 30px 0;
+    margin: -4px;
+    font-size: 14px;
+    border-left: 0;
+}
+.single_price_table .card{
+    padding:25px 20px;
+    border-radius:10px;
+}
+.single_price_table h6{
+    font-size: 18px;
+    font-weight: 700;
+    color: #30323d;
+}
+.single_price_table h1{
+    font-size:60px;
+    font-weight: 700;
+    color: #7336f1;
+}
+.single_price_table h1 small{
+    font-size:18px;
+    font-weight:400;
+    color: #30323d;
+}
+.single_price_table h1 span{
+    font-size:25px;
+    color: #7336f1;
+}
+.price_featured ul{
+    padding-bottom: 20px;
+}
+.price_featured ul li{
+    margin-bottom:10px;
+}
+.price_featured ul li a{
+    font-size: 14px;
+    color: #878991;
+    font-weight: 400;
+}
+.price_featured a{
+    padding:10px 25px;
+    font-size: 14px;
+}
+.feature_btn_border{
+    background: transparent;
+    color: #38363d;
+    border: 2px solid #ff77a4;
+}
+/*
+=======================================================
+********** Section:07,Testimonial Section Css *********
+=======================================================
+*/
+#testimonial_section {
+	background-image: -moz-linear-gradient( -51deg, rgb( 47, 50, 212 ) 0%, rgb( 113, 66, 247 ) 100%);
+	background-image: -webkit-linear-gradient( -51deg, rgb( 47, 50, 212 ) 0%, rgb( 113, 66, 247 ) 100%);
+	width: 100%;
+	padding-top: 285px;
+	margin-top: -185px;
+}
+.testimonial_content h2{
+    font-size:48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom:25px;
+}
+.testimonial_content p {
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	width: 60%;
+	margin: 0 auto;
+}
+.testimonial_content h6{
+	font-size: 16px;
+	font-weight:700;
+    color: #fff;
+    padding:15px 0px;
+}
+.testimonial_content h6 span{
+	font-weight:400;
+
+}
+.user_image img{
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.testimonial_content img:nth-child(even){
+     filter: grayscale(100);
+     opacity: .2;
+}
+/*
+=======================================================
+********** Section:08, Screenshot Section Css *********
+=======================================================
+*/
+#screenshot_section{
+    width: 100%;
+    padding-top:170px;
+    padding-bottom: 110px;
+}
+/*
+=======================================================
+************ Section:08, FAQ Section  Css ************
+=======================================================
+*/
+.collapse_btn{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size:20px;
+    font-weight: 700;
+    color: #fff;
+}
+#ask_question .card{
+    margin-bottom: 20px;
+}
+.collapse_btn:focus{
+    border: none;
+    outline: none;
+}
+.cardbg{
+    background-image: -moz-linear-gradient( -51deg, rgb( 47, 50, 212 ) 0%, rgb( 113, 66, 247 ) 100%);
+    background-image: -webkit-linear-gradient( -51deg, rgb( 47, 50, 212 ) 0%, rgb( 113, 66, 247 ) 100%);
+    margin-bottom:10px;
+}
+  
